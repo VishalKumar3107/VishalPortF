@@ -1,0 +1,145 @@
+.About {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.AboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+}
+
+.AboutLeft {
+  flex-basis: 60%;
+  height: 450px;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  word-spacing: 12px;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.AboutLeftone {
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.AboutLefttwo {
+  font-size: 25px;
+}
+
+.AboutLeftthree {
+  margin-top: 20px;
+  line-height: 24px;
+  color: #607b7c;
+}
+
+.AboutRight {
+  flex-basis: 40%;
+  height: 500px;
+  z-index: 1;
+  /* background-color: #607b7c; */
+}
+
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.parallax-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-image {
+  position: absolute;
+  padding-top: 1500px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../assets/user.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* border: 2px solid white; */
+  z-index: -1;
+  /* display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; */
+  position: relative;
+  overflow: hidden;
+}
+
+.modalthreed {
+  width: 620px;
+  height: 620px;
+  margin-top: 270px;
+  /* border: 2px solid white; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .About {
+    width: 100%;
+    height: 100%;
+    /* padding: 5px; */
+  }
+
+  .AboutContainer {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .AboutLeft {
+    height: 450px;
+    font-size: 16px;
+    word-spacing: 10px;
+  }
+
+  .AboutLefttwo {
+    font-size: 20px;
+  }
+
+  .AboutRight {
+    height: 400px;
+    z-index: 1;
+  }
+
+  .AboutLeftone {
+    font-size: 80px;
+    line-height: 65px;
+    font-weight: 900;
+  }
+
+  .AboutLeftthree {
+    margin-top: 20px;
+    line-height: 20px;
+  }
+}

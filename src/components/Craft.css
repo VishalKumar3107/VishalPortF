@@ -1,0 +1,205 @@
+.Craft {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+
+@media screen and (max-width: 991px){
+
+  .Craft{
+    margin-bottom: 100px;
+  }
+  .CraftContainer{
+    flex-direction: column-reverse;
+  }
+
+  .CraftContainer {
+    width: 90%;
+  
+  }
+  
+  .CraftContainer .CraftContainerLeft {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  
+  .CraftContainer .CraftContainerRight{
+      flex-basis: 65%;
+      height: auto;
+      margin-top: 50px;
+      font-size: 25px;
+  }
+  
+  .CraftContainer .CraftContainerRight .iconPlus{
+      font-size: 15px;
+  }
+  
+  .texttwoss{
+      font-size: 120px;
+      color: #F1FAEE;
+      font-weight: 900;
+      line-height: 95px;
+  }
+  
+  .CraftContainer .pulset{
+    top: 0;
+      right: 20px;
+      width: 50px;
+  }
+   
+  
+}
+
+.CraftContainer {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+}
+
+.CraftContainerLeft {
+  flex-basis: 35%;
+  color: #f1faee;
+  font-weight: 900;
+  font-size: 120px;
+  max-width: 450px;
+  line-height: 100px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.CraftContainerRight{
+    flex-basis: 65%;
+    height: 350px;
+    font-weight: 600;
+    text-align: left;
+    color: #f1faee;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CraftContainerRight .iconPlus{
+    color: #E63946;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
+
+.texttwoss{
+    font-size: 120px;
+    color: #F1FAEE;
+    font-weight: 900;
+    line-height: 95px;
+}
+
+.pulset{
+    height: 50px;
+    position: absolute;
+    right: 80px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit:cover;
+    background-color: transparent;
+    border: none;
+    border: 1px dashed #F1FAEE;
+}
+
+.pulset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.pulset img{
+ height: 45px;
+}
+              
+.pulset {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+     
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(230, 57, 70, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  
+  .modal-content {
+    background-color: #E63946;
+    background-image: url(./assets/texture.jpg);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .modal-contentBox{
+    width: 50%;
+  }
+
+
+  .gobackbtn{
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+   }
+   
+   .gobackbtn> svg {
+    margin-right: 5px;
+    fill: white;
+    margin-left: 5px;
+    font-size: 25px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .gobackbtn:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .gobackbtn:hover {
+    transform: translateY(-2px);
+   }

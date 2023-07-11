@@ -1,0 +1,45 @@
+.transition-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    z-index: 9999;
+  }
+  
+  .transition-row {
+    width: 100%;
+    height: 33.33%;
+    background-color: #dd8a8a;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 9999;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  .transition-row:nth-child(1) {
+    background-color: #e63946;
+  }
+  
+  .transition-row:nth-child(2) {
+    background-color: #db5661;
+  }
+  
+  .transition-row:nth-child(3) {
+    background-color: #dd8a8a;
+  }

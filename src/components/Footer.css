@@ -1,0 +1,192 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.FooterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 50%;
+  /* background-image: url(../assets/back.jpg); */
+  object-fit: contain;
+}
+
+.FooterBox {
+    cursor: pointer;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* background-image: url(../assets/texture.jpg); */
+  background-blend-mode: multiply;
+  transition: 1.5s;
+  /* background: linear-gradient(to top right, #2c5083, white); */
+  box-shadow: inset 0px 0px 10px 0px rgba(69, 123, 157, 1);
+}
+
+.FooterBox:hover img{
+    transform: translateX(20%);
+}
+
+.FooterBox div img{
+    transition: 1.2s;
+    width: 250px;
+    margin-left: -50px;
+    filter: brightness(1.2) invert(0);
+}
+
+.FooterBoxText{
+    color: white;
+    text-align: left;
+    font-size: 50px;
+    font-weight:bolder;
+    position: absolute;
+    right: -70px;
+    bottom: 150px;
+    width: 270px;
+    font-family: 'Kanit', sans-serif;
+    transform: rotate(270deg);
+}
+
+.FooterBoxText span{
+    color: white;
+    font-weight: 10;
+}
+
+.FooterLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.linkedIn{
+    fill: white;
+    font-size: 35px;
+    margin: 5px;
+}
+
+.linkedIn:hover{
+fill: #b82c37;
+}
+
+.FooterLinksContact Button{
+    height: 35px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 550;
+    font-family: 'Kanit', sans-serif;
+    z-index: 999;
+    padding: 5px;
+}
+
+.FooterLinksContact Button:hover{
+    background-color: black;
+    color: white;
+}
+
+.scroll-to-top-button{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    font-size: 43px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.scroll-to-top-button:hover{
+    color: #b82c37;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 776px){
+    .Footer {
+        width: 100%;
+        height: auto;
+      }
+      
+      .FooterContainer {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+      .FooterBox {
+        width: 80%;
+        height: 300px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+      
+      
+      .FooterBox div img{
+          width: 180px;
+          margin-left: -30px;
+      }
+      
+      .FooterBoxText{
+          color: white;
+          text-align: left;
+          font-size: 40px;
+          right: -70px;
+          bottom: 120px;
+          width: 270px;
+      }
+      
+      .FooterBoxText span{
+          color: white;
+          font-weight: 10;
+      }
+      
+      .FooterLinks{
+          width: 100%;
+          margin-top: 12px;
+          justify-content: space-between;
+      }
+      
+      .linkedIn{
+          fill: white;
+          font-size: 35px;
+          margin: 5px;
+      }
+      
+      .linkedIn:hover{
+      fill: #E63946;
+      }
+      
+      .FooterLinksContact{
+          height: 35px;
+          width: 100px;
+          color: #E63946;
+      }
+      
+      .FooterLinksContact Button:hover{
+          background-color: black;
+          color: white;
+      }
+}

@@ -1,0 +1,78 @@
+:root {
+  --primary: #f1faee;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.btn:hover {
+  padding: 8px 20px;
+  transition: 250ms;
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: black;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--primary);
+}
+
+.btn-medium {
+  font-size: 18px;
+  color: black;
+}
+
+.btn-large {
+  padding: 12px 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.slide-in-content {
+  position: fixed;
+  background-color: #060d1f;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 100vh;
+  max-width:100%;
+}
+
+.ContactForm{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0px 50px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactClose{
+  background-color: transparent;
+  color: #f1faee;
+  font-size: 35px;
+  margin: 5px;
+  border: none;
+}
+
+.contactClose:hover{
+  color: #E63946;
+}

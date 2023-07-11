@@ -1,0 +1,142 @@
+.Gettoknowme{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+    color: #F1FAEE;
+}
+
+.AboutHeadBox{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    color: #F1FAEE;
+}
+
+.AboutHeadBoxImage img{
+    width: 170px;
+    margin: 80px;
+    filter: brightness(1.2) invert(0);
+}
+
+.AboutHeadBoxImage img {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+  }
+  
+  @keyframes slideInFromBelow {
+    0% {
+      top: 100%;
+      opacity: 0;
+    }
+    100% {
+      top: 20px;
+      opacity: 1;
+  }
+}
+  
+ .AboutHeadBoxImage img {
+    animation: slideInFromBelow 1s ease-in-out forwards;
+  }
+
+.AboutHeadBoxText{
+    max-width: 550px;
+    min-height: 450px;
+}
+.AboutHeadBoxText h1{
+    font-size: 90px;
+    line-height: 70px;
+}
+
+.AboutHeadBoxText p{
+    font-size: 22px;
+    word-spacing: 15px;
+}
+
+.AboutPageBox{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.AboutPageBox h1{
+    font-size: 150px;
+    line-height: 120px;
+    max-width: 1000px;
+}
+
+.AboutPageBox p{
+    margin-top: -50px;
+    font-size: 22px;
+    word-spacing: 15px;
+    max-width: 500px;
+    margin-left: 350px;
+}
+
+@media screen and (max-width: 776px){
+    .Gettoknowme{
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    
+    .AboutHeadBox{
+        width: 100%;
+        height: auto;
+    }
+    
+    .AboutHeadBoxImage img{
+        width: 120px;
+        margin: 10px;
+    }
+     
+    
+    .AboutHeadBoxText{
+        max-width: 550px;
+        height: 450px;
+    }
+    .AboutHeadBoxText h1{
+        font-size: 70px;
+        line-height: 50px;
+    }
+    
+    .AboutHeadBoxText p{
+        font-size: 22px;
+        word-spacing: 1px;
+    }
+    
+    .AboutPageBox{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .AboutPageBox h1{
+        font-size: 70px;
+        line-height: 70px;
+        max-width: 1000px;
+        max-width: 350px;
+        word-wrap: break-word;    
+    }
+    
+    .AboutPageBox p{
+        margin-top: -20px;
+        font-size: 22px;
+        word-spacing: 1px;
+        max-width: 500px;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,272 @@
+.Comments{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+    overflow: hidden;
+}
+
+.Comments h1{
+    color: #F1FAEE;
+    transform: rotate(2deg);
+    font-size: 120px;
+    line-height: 100px;
+    max-width: 600px;
+    margin-left: -400px;
+
+}
+
+.CommentsContainer{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(2deg);
+}
+
+@keyframes flyInLeft {
+    0% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.commentaTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* animation: flyInLeft 1s ease-in-out; */
+}
+
+@keyframes flyInRight {
+    0% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.commentaBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: flyInRight 1s ease-in-out; */
+}
+
+.card {
+  width: 240px;
+  height: 294px;
+  margin-left: 20px;
+  background: #F1FAEE;
+  font-family: inherit;
+  position: relative;
+  border-radius: 18px;
+  box-shadow:  0 0 20px 0 rgba(241, 250, 238, 0),
+  10px 10px 20px 0 rgba(241, 250, 238, 0.5);;
+
+}
+
+
+.cardc {
+    width: 240px;
+    height: 294px;
+    margin-left: 20px;
+    background: #0e1627;
+    font-family: inherit;
+    position: relative;
+    border-radius: 18px;
+    box-shadow: 0 0 20px 0 rgba(241, 250, 238, 0),
+    10px 10px 20px 0 rgba(241, 250, 238, 0.5);;
+  }
+
+.quote {
+  color: #A8DADC;
+  padding-left: 30px;
+  position: relative;
+}
+
+
+
+.card-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1D3557;
+  padding: 30px;
+}
+
+.body-text {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+  padding: 60px 40px 0;
+  color: #1D3557;
+  position: absolute;
+  top: 1.2vw;
+  left: 0.4vw;
+  max-height: 8.1em;
+  overflow: hidden;
+}
+
+.author {
+  margin-top: 42px;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.card:hover .author {
+  opacity: 1;
+}
+
+.pic {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(158, 196, 21);
+  border-radius: 50%;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  font-weight: 400;
+  color: #457B9D;
+  padding-left: 30px;
+}
+
+.cardc .body-text{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    color: #F1FAEE;
+}
+
+.cardc .author{
+    margin-top: 200px;
+    color: #F1FAEE;
+}
+
+
+.cardc:hover .author {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 991px){
+    .Comments{
+      width: 100%;
+      height: auto;
+      margin-bottom: 100px;
+  }
+  
+  .Comments h1{
+      font-size: 70px;
+      line-height: 70px;
+      margin-left: 0px;
+      transform: rotate(0deg);
+  
+  }
+  
+  .Comments .CommentsContainer{
+      width: 100%;
+      height: 100%;
+      transform: rotate(0deg);
+      margin-bottom: 50px;
+  }
+  
+  .commentaTop{
+    display: none;
+  }
+  .commentaBottom{
+      flex-direction: column;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  
+  }
+  
+  
+  .cardc {
+      margin-left: 0px;
+    }
+  
+  .quote {
+    color: #A8DADC;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  
+  
+  .card-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1D3557;
+    padding: 30px;
+  }
+  
+  .CommentsContainer .commentaBottom .card .body-text {
+    padding: 80px 40px 0;
+  }
+  
+  .author {
+    margin-top: 42px;
+    opacity: 0.3;
+    transition: 0.5s;
+  }
+  
+  .card:hover .author {
+    opacity: 1;
+  }
+  
+  .pic {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(158, 196, 21);
+    border-radius: 50%;
+  }
+  
+  .author-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author {
+    font-weight: 400;
+    color: #457B9D;
+    padding-left: 30px;
+  }
+  
+  .cardc .body-text{
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 25px;
+      color: #F1FAEE;
+  }
+  
+  .cardc .author{
+      margin-top: 200px;
+      color: #F1FAEE;
+  }
+  
+  
+  .cardc:hover .author {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }

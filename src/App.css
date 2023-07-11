@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Homepage{
+  width: 100%;
+  height: auto;
+  background-color: #1D3557;
+  background-image: url(./assets/texture.jpg);
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Aboutpage{
+  width: 100%;
+  height: auto;
+  background-color: #E63946;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Projectpage{
+  width: 100%;
+  height: auto;
+  background-color: #1D3557;
+  background-image: url(./assets/texture.jpg);
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Contactpage{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1D3557;
+  background-image: url(./assets/texture.jpg);
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+#root {
+  height: 100vh;
+}

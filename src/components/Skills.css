@@ -1,0 +1,270 @@
+.Skills {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.SkillsContainer {
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (max-width: 991px){
+  .Skills{
+    flex-direction: column;
+    margin-bottom: 100px;
+    /* padding: 10px; */
+  }
+
+  .Skills .SkillsContainer {
+    max-width: 90%;
+  }
+
+  .Skillsheading .Skillsheadingone{
+    font-size: 70px;
+    max-width: 350px;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: 50px;
+  }
+
+  .SkillsContainer .hexagon-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .hexagon {
+    width: 46%;
+    height: 80%;
+  }
+  
+  .SkillsContainer .hexagon-wrapper .hexagon img {
+    width: 50px;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Skills .Skillsheading .pulse{
+    top: 0px;
+    right: 80px;
+}
+}
+
+.Skillsheading{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  max-width: 500px;
+  margin-right: 50px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.Skillsheadingone{
+  color: #F1FAEE;
+  font-weight: 900;
+  font-size: 100px;
+  max-width: 450px;
+  line-height: 80px;
+  margin-left: -40px;
+}
+
+.Skillsheadingtwo{
+  color: #607b7c;
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.Skills {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .SkillsContainer {
+    display: flex;
+    max-width: 60%;
+    max-height: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
+  .hexagon-wrapper {
+    margin: auto;
+    display: flex;
+    text-align: initial;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    color: white;
+    background: linear-gradient(-180deg, #F1FAEE, #457B9D);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .hexagon img {
+    z-index: 1;
+    margin: auto;
+    width: 90px;
+    color: transparent;
+    /* background: linear-gradient(45deg, #a58fe9, #e37682); */
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  .hexagon:before {
+    transform: rotateZ(60deg);
+  }
+  .hexagon:after {
+    transform: rotateZ(-60deg);
+  }
+  
+  
+ .Skillsheading .pulse{
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit:cover;
+    background-color: transparent;
+    border: none;
+    border: 1px dashed #F1FAEE;
+}
+
+.pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.pulse img{
+ height: 45px;
+}
+              
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+     
+  
+  .modal-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(230, 57, 70, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  
+  .modal-contents {
+    background-color: #E63946;
+    background-image: url(./assets/texture.jpg);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .modal-contents  .modal-contentBox{
+    width: 40%;
+    margin-left: 200px;
+  }
+
+  .texttwos{
+    font-family: 'Kanit', sans-serif;    
+    color: #F1FAEE;
+  font-weight: 900;
+  font-size: 100px;
+  max-width: 450px;
+  line-height: 80px;
+  margin-bottom: 40px;
+  }
+
+
+  .gobackbtn{
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+   }
+   
+   .gobackbtn> svg {
+    margin-right: 5px;
+    fill: white;
+    margin-left: 5px;
+    font-size: 25px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .gobackbtn:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .gobackbtn:hover {
+    transform: translateY(-2px);
+   }
